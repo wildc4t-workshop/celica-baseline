@@ -31,11 +31,12 @@ The objective is not to redesign the car during Baseline. Opportunities for meas
 
 The current charge piping can be redesigned after the car is back together. The objective is to improve clearance and reduce risk to the rare A/C line using simple fabrication where possible. Ovalized sections, additive-manufactured transitions, or composite approaches may be explored, but the permanent solution should favor serviceability and avoid unnecessary welding/complexity.
 
-## Documentation
+## Source of Truth
 
-- [`PROJECT.md`](PROJECT.md) — durable current state, hardware, constraints, and execution logic.
-- [`tasks.csv`](tasks.csv) — currently useful executable work.
+- [`PROJECT.md`](PROJECT.md) — durable current vehicle state, hardware, constraints, and execution logic.
+- [`tasks.csv`](tasks.csv) — canonical executable work queue and task status.
 - [`project.yaml`](project.yaml) — machine-readable project state for the dashboard.
+- [`AGENTS.md`](AGENTS.md) — collaboration and repository-maintenance rules.
 
 Related repositories:
 
