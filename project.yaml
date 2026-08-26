@@ -1,0 +1,35 @@
+id: celica-baseline
+name: Celica Baseline
+repository: wildc4t-workshop/celica-baseline
+repository_type: engineering-project
+status: active
+phase: build
+checkpoint: 2026-08-26
+
+task_prefix: BASE-
+decision_prefix: DEC-BASE-
+
+objective: >-
+  Make the current 2000 Celica GT-S mechanically sorted and dependable enough
+  to get in and drive by completing maintenance catch-up, restoring A/C and
+  hydraulic power steering, and installing the Recaro seat upgrade.
+
+current_direction:
+  - Finish the active A/C restoration using the new OEM compressor, refreshed lines, aftermarket condenser, and reused rare high-pressure line.
+  - Restore the hydraulic power-steering system while intercooler piping is removed and access is good.
+  - Correct the rack/column indexing issue during steering restoration.
+  - Capture a 3D scan of the A/C, PS, and charge-pipe packaging region before reassembly.
+  - Protect the rare A/C line now, then reinstall the existing intercooler piping and return the car to service.
+  - Treat redesigned charge piping as follow-on refinement rather than a blocker to Baseline completion.
+  - Complete the Recaro seat path when the Japan-sourced rails and suitable SR3 seats are available.
+  - Use one mechanical audit to identify any remaining maintenance work instead of inventing generic replacement tasks.
+
+success_criteria:
+  baseline_complete: >-
+    The current car has caught-up maintenance, functional A/C, functional
+    hydraulic power steering, and the seat upgrade installed, with no known
+    issue that prevents normal get-in-and-drive street use.
+
+dashboard:
+  task_file: tasks.csv
+  durable_state: PROJECT.md
