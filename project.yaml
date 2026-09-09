@@ -30,6 +30,9 @@ success_criteria:
     hydraulic power steering, and the seat upgrade installed, with no known
     issue that prevents normal get-in-and-drive street use.
 
+purchase_index: >-
+  BASE-012|Baseline|Recaro SR3 seat set|https://www.ebay.com/sch/i.html?_nkw=Recaro+SR3+seats|||source
+
 dashboard:
   task_file: tasks.csv
   durable_state: PROJECT.md
