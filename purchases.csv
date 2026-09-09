@@ -1,0 +1,3 @@
+id,task_id,stage,system,item,part_number,qty,state,vendor,url,price_usd,price_checked_at,track_price,notes
+PUR-BASE-001,BASE-011,Baseline,Seats,Celica Recaro seat rails and brackets,ORDERED,1,ordered,Japan source,https://www.ebay.com/sch/i.html?_nkw=toyota+celica+recaro+seat+rail, ,2026-09-09,false,Already ordered; link is a future sourcing fallback rather than the original transaction
+PUR-BASE-002,BASE-012,Baseline,Seats,Recaro SR3 seat pair,OPEN,1,source,eBay,https://www.ebay.com/sch/i.html?_nkw=recaro+sr3+pair, ,2026-09-09,false,Used-market search; condition and upholstery matter more than stable retail price
