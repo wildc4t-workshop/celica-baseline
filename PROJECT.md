@@ -17,42 +17,47 @@ Modernization work outside those requirements may happen opportunistically, but 
 
 ### A/C
 
-The A/C system is being substantially refreshed.
+The A/C system has been substantially refreshed and the engine is back in running configuration.
 
 Known current hardware/state:
 
 - Brand-new OEM compressor is installed.
 - Aftermarket condenser is part of the refresh.
-- New A/C lines are being installed where available.
-- One expensive/high-pressure line is being reused because it is effectively unobtainable and must be protected carefully.
-- The remaining immediate A/C task is to install that high-pressure line and finish system reassembly/verification.
+- New/refreshed A/C lines are installed where available.
+- The rare high-pressure line has been installed and given practical protection/support.
+- A/C request/compressor loading has been observed during PowerFC idle diagnostics.
+- Final Baseline closeout is a normal-use verification of cabin cooling and leak-free operation rather than more disassembly.
 
 ### Hydraulic power steering
 
-Power steering is currently deleted/bypassed at the rack and should be restored now while the same packaging area is open.
+The conventional hydraulic power-steering system has been restored after previously being deleted/bypassed at the rack.
 
-Known current hardware/state:
+Current state:
 
-- Rack is installed in the car.
-- Rack lines are currently looped.
-- Replacement lines to/from the pump have been purchased.
-- A standard-length accessory belt has been purchased.
-- Multiple spare hydraulic power-steering components exist, but exact spare inventory is not required for Baseline planning.
-- Rack/column indexing appears one tooth off: alignment is normal, but steering-wheel position is rotated. Correct this mechanically during restoration.
+- Power-steering hardware/plumbing is installed.
+- The accessory drive is back in the standard-length-belt hydraulic-PS configuration.
+- Steering-wheel indexing has been corrected/recentered mechanically.
+- Remaining closeout is a road verification of assist, leaks, belt tracking, pump behavior, and steering-wheel position.
+
+Service lesson preserved for future work: the 2ZZ power-steering pump sliding/captive sleeves can be reset without hammer access using a bearing cup, the long PS-delete-pulley bolt, and two nuts as a compact press.
+
+### Turbo service work completed during reassembly
+
+The following current-turbo-system maintenance was completed while the front/passenger-side service area was open:
+
+- Turbo coolant lines rebuilt.
+- Turbo oil drain rebuilt.
+- Engine oil changed.
+
+These are Baseline maintenance actions on the current running configuration; they do not redefine the future Street Build turbo architecture.
 
 ### Intercooler piping / packaging
 
-The current intercooler piping interferes with access to the A/C and power-steering area and has contributed to concern about the rare A/C high-pressure line.
+The existing intercooler piping has been reinstalled and the car returned to running configuration.
 
-Baseline philosophy:
+The rare A/C line now has practical protection/support. A 3D scan of the A/C / PS / charge-pipe packaging region was not required to hold up reassembly and remains an opportunistic measurement task for the next time access is naturally available.
 
-- Remove or move charge piping as required to complete A/C and PS work.
-- Capture a 3D scan while the area is open.
-- Add practical protection/support for the rare A/C line now.
-- Reinstall the existing charge piping and return the car to service.
-- Do not keep the car apart waiting for a redesigned pipe.
-
-Follow-on refinement may investigate:
+Follow-on refinement may still investigate:
 
 - ovalized charge-pipe sections;
 - additive-manufactured transitions or sections;
@@ -60,7 +65,25 @@ Follow-on refinement may investigate:
 - simple fabrication methods that reduce or eliminate welding;
 - better routing, service access, and A/C-line protection.
 
-The redesigned charge piping is a refinement opportunity, not a Baseline completion requirement.
+The redesigned charge piping remains a refinement opportunity, not a Baseline completion requirement.
+
+### Engine management / diagnostics
+
+The current ECU is an APEXi Power FC using FC-Datalogit / FC-Edit.
+
+A repeatable A/C-on idle hunt was diagnosed with logging rather than parts substitution. The key observed behavior was excessive idle-control authority plus a lean A/C-idle operating region. With O2 feedback disabled for diagnosis, hot A/C-off idle was reasonable while A/C-on idle at approximately 900 rpm went roughly 17.8:1 AFR.
+
+The corrective change was intentionally local:
+
+- Idle A/E target: 800 rpm.
+- Idle A/C target: 900 rpm.
+- Base Map row 3000 / 800 rpm: 2.152 -> 2.550.
+- Base Map row 3000 / 1200 rpm: 2.152 -> 2.550.
+- Injector scaling and injector-lag settings were left untouched.
+
+With O2 feedback still off for the controlled test, the A/C-on AFR moved to approximately 14.8-15.0:1 and the idle hunt effectively disappeared. O2 feedback can therefore be used normally without having to rescue a large base-map error.
+
+Preserve the diagnostic evidence and capture one additional driving log for the separate shift/rev-hang complaint. The useful channels are VTA/TPS, RPM, ISC command (`???(2)`), injector pulse width, AFR, and relevant A/C states. The purpose is to determine whether the engine is experiencing ECU/IAC dashpot behavior, delayed mechanical throttle closure, or another decel transition issue.
 
 ### Seats
 
@@ -77,9 +100,16 @@ Future upholstery or alternate Recaro choices do not need to be resolved for Bas
 
 ## Maintenance / catch-up
 
-Do not create a generic catalog of maintenance replacement tasks without evidence.
+The car is now far enough along that Baseline is in closeout/validation rather than major reassembly.
 
-Perform one vehicle-level mechanical audit after or during the current reassembly and create specific work only from findings. The audit should cover, at minimum:
+Known remaining maintenance/diagnostic actions:
+
+- Recheck manual-transmission fluid level/condition.
+- Measure key-off parasitic draw with an ammeter and isolate the affected circuit by pulling fuses methodically.
+- Replace brake fluid when a second set of hands is available for bleeding.
+- Complete the remaining vehicle-level mechanical/roadworthiness audit from actual findings rather than a generic replacement list.
+
+The audit should continue to cover, as applicable:
 
 - fluid condition / known service intervals;
 - visible leaks;
@@ -89,20 +119,16 @@ Perform one vehicle-level mechanical audit after or during the current reassembl
 - obvious suspension/steering wear;
 - lights, wipers, and basic roadworthiness.
 
-The purpose is to establish that the current car is genuinely sorted, not to replace parts preemptively for the sake of completing a checklist.
-
 ## Execution logic
 
 ### Required now
 
-1. Install the rare remaining A/C high-pressure line.
-2. Restore hydraulic power steering while charge piping is out of the way.
-3. Correct rack/column indexing.
-4. 3D-scan the open packaging area.
-5. Protect/support the rare A/C line as practical.
-6. Reinstall existing charge piping.
-7. Verify A/C and PS operation.
-8. Perform the baseline mechanical audit and create follow-up tasks only from real findings.
+1. Road-verify hydraulic power steering, steering-wheel position, and A/C operation after reassembly.
+2. Capture a PowerFC diagnostic baseline including normal hot idle behavior and the shift/rev-hang event.
+3. Recheck manual-transmission fluid.
+4. Measure parasitic current draw and isolate the responsible fused circuit.
+5. Replace brake fluid when helper availability allows.
+6. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
 
 ### Parallel / waiting
 
@@ -110,8 +136,9 @@ The purpose is to establish that the current car is genuinely sorted, not to rep
 - Source suitable Recaro SR3 seats.
 - Install seats when both prerequisites exist.
 
-### Deferred refinement
+### Opportunistic / deferred refinement
 
+- 3D-scan the A/C / PS / charge-pipe region the next time access is naturally available.
 - CAD and fabricate improved charge piping.
 - Pursue additional amenities or modernization outside the narrow Baseline definition.
 
