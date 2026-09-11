@@ -11,15 +11,32 @@ Baseline is intentionally narrow. It is complete when the current car has:
 
 The objective is not to redesign the car during Baseline. Opportunities for measurement, CAD, or future refinement may be captured, but they do not get to hold the car apart.
 
+## Current State
+
+The major A/C / hydraulic-PS reassembly is complete enough that the project has moved from **build** into **validation**.
+
+Completed in the current service cycle:
+
+- rare A/C high-pressure line installed and protected;
+- hydraulic power steering restored;
+- standard accessory-drive configuration restored;
+- steering wheel mechanically recentered;
+- existing intercooler piping reinstalled;
+- turbo coolant lines rebuilt;
+- turbo oil drain rebuilt;
+- engine oil changed;
+- PowerFC A/C idle-hunt diagnosis and localized base-map correction completed.
+
+The A/C idle correction and supporting logs are documented in [`diagnostics/2026-09-11-powerfc-baseline.md`](diagnostics/2026-09-11-powerfc-baseline.md).
+
 ## Current Critical Path
 
-1. Finish the A/C restoration by installing the remaining rare high-pressure line.
-2. Restore the hydraulic power-steering system while the intercooler piping is out of the way.
-3. Correct the steering rack/column indexing issue while access is available.
-4. 3D-scan the A/C / power-steering / charge-pipe packaging region before reassembly.
-5. Protect and support the rare A/C line as well as practical with the current hardware.
-6. Reinstall the existing intercooler piping and return the car to service.
-7. Verify A/C and steering operation.
+1. Road-verify A/C cooling/leak-free operation, hydraulic steering assist, belt tracking, leaks, and steering-wheel position.
+2. Capture a PowerFC driving log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
+3. Recheck manual-transmission fluid level/condition.
+4. Measure key-off parasitic draw with an ammeter and isolate the responsible circuit by pulling fuses methodically.
+5. Replace brake fluid when a second set of hands is available.
+6. Finish the evidence-driven mechanical roadworthiness audit.
 
 ## Parallel Seat Path
 
@@ -29,7 +46,7 @@ The objective is not to redesign the car during Baseline. Opportunities for meas
 
 ## Follow-on Refinement
 
-The current charge piping can be redesigned after the car is back together. The objective is to improve clearance and reduce risk to the rare A/C line using simple fabrication where possible. Ovalized sections, additive-manufactured transitions, or composite approaches may be explored, but the permanent solution should favor serviceability and avoid unnecessary welding/complexity.
+The current charge piping can be redesigned after Baseline. A 3D scan of the A/C / power-steering / charge-pipe region is now opportunistic rather than a blocker. Future work may investigate ovalized sections, additive-manufactured transitions, or composite approaches, but the permanent solution should favor serviceability and avoid unnecessary fabrication complexity.
 
 ## Source of Truth
 
