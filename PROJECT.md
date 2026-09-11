@@ -24,7 +24,7 @@ Known current hardware/state:
 - Brand-new OEM compressor is installed.
 - Aftermarket condenser is part of the refresh.
 - New/refreshed A/C lines are installed where available.
-- The rare high-pressure line has been installed and given practical protection/support.
+- The rare high-pressure line has been installed and protected with a P-clip plus 5/8-in heater hose around the vulnerable section.
 - A/C request/compressor loading has been observed during PowerFC idle diagnostics.
 - Final Baseline closeout is a normal-use verification of cabin cooling and leak-free operation rather than more disassembly.
 
@@ -55,17 +55,9 @@ These are Baseline maintenance actions on the current running configuration; the
 
 The existing intercooler piping has been reinstalled and the car returned to running configuration.
 
-The rare A/C line now has practical protection/support. A 3D scan of the A/C / PS / charge-pipe packaging region was not required to hold up reassembly and remains an opportunistic measurement task for the next time access is naturally available.
+The A/C / PS / charge-pipe corridor was 3D-scanned before closeout. Review of the exposed corridor suggests that the current architecture does not offer much practical recoverable space without a larger redesign. Because the rare A/C line is now physically supported and protected, further Baseline effort on charge-pipe packaging is low-value relative to advancing the Street Build.
 
-Follow-on refinement may still investigate:
-
-- ovalized charge-pipe sections;
-- additive-manufactured transitions or sections;
-- carbon-fiber/composite tubing;
-- simple fabrication methods that reduce or eliminate welding;
-- better routing, service access, and A/C-line protection.
-
-The redesigned charge piping remains a refinement opportunity, not a Baseline completion requirement.
+Follow-on CAD/fabrication of improved charge piping remains optional future refinement rather than a Baseline priority.
 
 ### Engine management / diagnostics
 
@@ -119,16 +111,22 @@ The audit should continue to cover, as applicable:
 - obvious suspension/steering wear;
 - lights, wipers, and basic roadworthiness.
 
+## Administrative / road-legal
+
+- State safety inspection must be scheduled and completed before the end of September 2026.
+- Vehicle registration/tags also expire at the end of September 2026 and should be renewed before 2026-09-30.
+
 ## Execution logic
 
 ### Required now
 
 1. Road-verify hydraulic power steering, steering-wheel position, and A/C operation after reassembly.
 2. Capture a PowerFC diagnostic baseline including normal hot idle behavior and the shift/rev-hang event.
-3. Recheck manual-transmission fluid.
-4. Measure parasitic current draw and isolate the responsible fused circuit.
-5. Replace brake fluid when helper availability allows.
-6. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
+3. Schedule/complete the state safety inspection and renew registration/tags before month-end.
+4. Recheck manual-transmission fluid.
+5. Measure parasitic current draw and isolate the responsible fused circuit.
+6. Replace brake fluid when helper availability allows.
+7. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
 
 ### Parallel / waiting
 
@@ -136,11 +134,11 @@ The audit should continue to cover, as applicable:
 - Source suitable Recaro SR3 seats.
 - Install seats when both prerequisites exist.
 
-### Opportunistic / deferred refinement
+### Deferred refinement / Street Build priority
 
-- 3D-scan the A/C / PS / charge-pipe region the next time access is naturally available.
-- CAD and fabricate improved charge piping.
-- Pursue additional amenities or modernization outside the narrow Baseline definition.
+- The packaging scan is complete and suggests limited practical space can be recovered in the current corridor.
+- Keep improved charge-pipe CAD/fabrication low priority unless a future service event creates a clear reason to revisit it.
+- Direct near-term project energy toward the Street Build rather than further optimizing the current service corridor.
 
 ## Boundary with Street Build
 
