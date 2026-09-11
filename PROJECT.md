@@ -77,6 +77,8 @@ With O2 feedback still off for the controlled test, the A/C-on AFR moved to appr
 
 Preserve the diagnostic evidence and capture one additional driving log for the separate shift/rev-hang complaint. The useful channels are VTA/TPS, RPM, ISC command (`???(2)`), injector pulse width, AFR, and relevant A/C states. The purpose is to determine whether the engine is experiencing ECU/IAC dashpot behavior, delayed mechanical throttle closure, or another decel transition issue.
 
+The detailed fresh-read PowerFC reference and log interpretation are retained in `diagnostics/2026-09-11-powerfc-baseline.md`.
+
 ### Seats
 
 The user has effectively committed to Recaro-compatible seat infrastructure.
@@ -113,20 +115,21 @@ The audit should continue to cover, as applicable:
 
 ## Administrative / road-legal
 
-- State safety inspection must be scheduled and completed before the end of September 2026.
-- Vehicle registration/tags also expire at the end of September 2026 and should be renewed before 2026-09-30.
+- State safety inspection needs to be scheduled and then completed. No inspection expiration date is currently recorded in this repository.
+- Vehicle registration/tags expire at the end of September 2026 and should be renewed before 2026-09-30.
 
 ## Execution logic
 
 ### Required now
 
-1. Road-verify hydraulic power steering, steering-wheel position, and A/C operation after reassembly.
-2. Capture a PowerFC diagnostic baseline including normal hot idle behavior and the shift/rev-hang event.
-3. Schedule/complete the state safety inspection and renew registration/tags before month-end.
+1. Renew registration/tags before month-end and schedule the state safety inspection.
+2. Road-verify hydraulic power steering, steering-wheel position, and A/C operation after reassembly.
+3. Capture a PowerFC diagnostic baseline including the shift/rev-hang event.
 4. Recheck manual-transmission fluid.
 5. Measure parasitic current draw and isolate the responsible fused circuit.
 6. Replace brake fluid when helper availability allows.
-7. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
+7. Complete the scheduled state safety inspection.
+8. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
 
 ### Parallel / waiting
 
