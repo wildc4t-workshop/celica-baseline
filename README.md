@@ -35,14 +35,16 @@ The PowerFC idle correction and supporting logs are documented in [`diagnostics/
 
 ## Current Critical Path
 
-1. Schedule the Virginia state safety inspection and complete it before 2026-09-30.
-2. Renew vehicle registration/tags before 2026-09-30.
+1. Renew vehicle registration/tags before 2026-09-30.
+2. Schedule the state safety inspection, then complete it at the booked appointment.
 3. Road-verify A/C cooling/leak-free operation, hydraulic steering assist, belt tracking, leaks, and steering-wheel position.
 4. Capture a PowerFC driving log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
 5. Recheck manual-transmission fluid level/condition.
 6. Measure key-off parasitic draw with an ammeter and isolate the responsible circuit by pulling fuses methodically.
 7. Replace brake fluid when a second set of hands is available.
 8. Finish the evidence-driven mechanical roadworthiness audit.
+
+No state-inspection expiration date is currently recorded in the repository; the explicit end-of-month deadline applies to the registration/tags.
 
 ## Parallel Seat Path
 
