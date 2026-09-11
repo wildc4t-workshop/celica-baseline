@@ -7,36 +7,42 @@ Baseline is intentionally narrow. It is complete when the current car has:
 - maintenance caught up;
 - functional A/C;
 - functional hydraulic power steering;
-- the seat upgrade installed.
+- the seat upgrade installed;
+- no known issue preventing normal street use.
 
 The objective is not to redesign the car during Baseline. Opportunities for measurement, CAD, or future refinement may be captured, but they do not get to hold the car apart.
 
 ## Current State
 
-The major A/C / hydraulic-PS reassembly is complete enough that the project has moved from **build** into **validation**.
+The major A/C / hydraulic-PS reassembly is complete and the project is in **validation / closeout**.
 
 Completed in the current service cycle:
 
-- rare A/C high-pressure line installed and protected;
+- rare A/C high-pressure line installed, P-clipped, and protected with 5/8-in heater hose around the vulnerable section;
 - hydraulic power steering restored;
 - standard accessory-drive configuration restored;
 - steering wheel mechanically recentered;
+- A/C / PS / charge-pipe corridor 3D scan captured;
 - existing intercooler piping reinstalled;
 - turbo coolant lines rebuilt;
 - turbo oil drain rebuilt;
 - engine oil changed;
 - PowerFC A/C idle-hunt diagnosis and localized base-map correction completed.
 
-The A/C idle correction and supporting logs are documented in [`diagnostics/2026-09-11-powerfc-baseline.md`](diagnostics/2026-09-11-powerfc-baseline.md).
+The scan review suggests there is limited useful space to recover in the current service corridor without a larger redesign, so further charge-pipe optimization is intentionally deprioritized in favor of advancing the Street Build.
+
+The PowerFC idle correction and supporting logs are documented in [`diagnostics/2026-09-11-powerfc-baseline.md`](diagnostics/2026-09-11-powerfc-baseline.md).
 
 ## Current Critical Path
 
-1. Road-verify A/C cooling/leak-free operation, hydraulic steering assist, belt tracking, leaks, and steering-wheel position.
-2. Capture a PowerFC driving log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
-3. Recheck manual-transmission fluid level/condition.
-4. Measure key-off parasitic draw with an ammeter and isolate the responsible circuit by pulling fuses methodically.
-5. Replace brake fluid when a second set of hands is available.
-6. Finish the evidence-driven mechanical roadworthiness audit.
+1. Schedule the Virginia state safety inspection and complete it before 2026-09-30.
+2. Renew vehicle registration/tags before 2026-09-30.
+3. Road-verify A/C cooling/leak-free operation, hydraulic steering assist, belt tracking, leaks, and steering-wheel position.
+4. Capture a PowerFC driving log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
+5. Recheck manual-transmission fluid level/condition.
+6. Measure key-off parasitic draw with an ammeter and isolate the responsible circuit by pulling fuses methodically.
+7. Replace brake fluid when a second set of hands is available.
+8. Finish the evidence-driven mechanical roadworthiness audit.
 
 ## Parallel Seat Path
 
@@ -46,7 +52,7 @@ The A/C idle correction and supporting logs are documented in [`diagnostics/2026
 
 ## Follow-on Refinement
 
-The current charge piping can be redesigned after Baseline. A 3D scan of the A/C / power-steering / charge-pipe region is now opportunistic rather than a blocker. Future work may investigate ovalized sections, additive-manufactured transitions, or composite approaches, but the permanent solution should favor serviceability and avoid unnecessary fabrication complexity.
+The A/C / power-steering / charge-pipe region has now been scanned. Review of the corridor indicates that the current architecture offers limited practical recoverable space, and the rare A/C line is already physically supported and protected. Improved charge-pipe CAD/fabrication remains a low-priority future refinement rather than active Baseline work.
 
 ## Source of Truth
 
