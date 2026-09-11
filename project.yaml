@@ -21,7 +21,7 @@ current_direction:
   - Validate A/C cooling/leak-free operation and hydraulic steering behavior in normal road use rather than reopening the service area.
   - Preserve the 2026-09-11 PowerFC diagnostic baseline: 800 rpm normal idle, 900 rpm A/C idle, and the localized 3000-load / 800-1200-rpm Base Map correction that resolved the A/C idle hunt.
   - Capture a road log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
-  - Schedule and complete state safety inspection and renew registration/tags before the end of September 2026.
+  - Renew registration/tags before 2026-09-30. Schedule and complete the state safety inspection separately; no inspection expiration date is currently recorded.
   - Recheck manual-transmission fluid, diagnose the known key-off parasitic draw with an ammeter/fuse-pull test, and replace brake fluid when helper availability allows.
   - Finish the evidence-driven mechanical audit from actual findings.
   - Complete the Recaro seat path when the Japan-sourced rails and suitable SR3 seats are available.
