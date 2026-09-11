@@ -83,8 +83,8 @@ The major A/C / hydraulic-PS reassembly is complete. Current work is validation 
 
 Current execution logic is:
 
-1. schedule and complete the Virginia state safety inspection before 2026-09-30;
-2. renew registration/tags before 2026-09-30;
+1. renew registration/tags before 2026-09-30;
+2. schedule the state safety inspection and then complete it at the booked appointment;
 3. road-verify A/C and hydraulic power-steering operation, belt tracking, leaks, and steering-wheel position;
 4. capture the PowerFC shift/rev-hang log before changing decel/idle-control settings;
 5. recheck manual-transmission fluid;
@@ -92,6 +92,8 @@ Current execution logic is:
 7. replace brake fluid when helper availability allows;
 8. finish the evidence-driven roadworthiness audit;
 9. complete the Recaro seat path when hardware is available.
+
+Do not invent an inspection deadline that is not recorded by the user. The currently documented end-of-month deadline applies to registration/tags.
 
 Do **not** reopen the service corridor or hold Baseline open for a speculative charge-pipe redesign.
 
