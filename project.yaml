@@ -15,14 +15,16 @@ objective: >-
   hydraulic power steering, and installing the Recaro seat upgrade.
 
 current_direction:
-  - Treat the major A/C/PS reassembly as complete: rare A/C line installed/protected, hydraulic power steering restored, standard belt installed, steering wheel recentered, and existing charge piping back on the car.
+  - Treat the major A/C/PS reassembly as complete: rare A/C line installed, P-clipped and protected with 5/8-in heater hose at the vulnerable section; hydraulic power steering restored; standard belt installed; steering wheel recentered; and existing charge piping back on the car.
+  - Treat the A/C / PS / charge-pipe 3D scan as complete. The captured corridor suggests limited practical space can be recovered in the current architecture, so further Baseline packaging optimization is low priority.
+  - Direct near-term project energy toward the Street Build rather than further optimizing the current service corridor.
   - Validate A/C cooling/leak-free operation and hydraulic steering behavior in normal road use rather than reopening the service area.
   - Preserve the 2026-09-11 PowerFC diagnostic baseline: 800 rpm normal idle, 900 rpm A/C idle, and the localized 3000-load / 800-1200-rpm Base Map correction that resolved the A/C idle hunt.
   - Capture a road log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
+  - Schedule and complete state safety inspection and renew registration/tags before the end of September 2026.
   - Recheck manual-transmission fluid, diagnose the known key-off parasitic draw with an ammeter/fuse-pull test, and replace brake fluid when helper availability allows.
   - Finish the evidence-driven mechanical audit from actual findings.
   - Complete the Recaro seat path when the Japan-sourced rails and suitable SR3 seats are available.
-  - Keep the 3D scan and redesigned charge piping as opportunistic/follow-on work rather than Baseline blockers.
 
 success_criteria:
   baseline_complete: >-
