@@ -51,6 +51,18 @@ Canonical task schema:
 id,title,status,action,time_min,context,cost,priority,blocked_by,decision_needed,doc_link,requires_car_down,requires_parts,notes
 ```
 
+Dashboard-supported statuses:
+
+`backlog`, `ready`, `doing`, `blocked`, `verify`, `done`
+
+Dashboard-supported actions:
+
+`research`, `measure`, `buy`, `cad`, `mockup`, `bench-test`, `vehicle-test`, `code`, `fabricate`, `install`, `document`, `verify`
+
+Dashboard-supported contexts:
+
+`desk`, `phone`, `garage`, `car`, `bench`, `cad`, `computer`
+
 Keep tasks limited to work that actually advances the current car toward normal use. Do not create generic maintenance replacement tasks without evidence.
 
 ## Baseline completion criteria
@@ -67,22 +79,27 @@ Tires remain part of Street Build / upgrade progression, not a Baseline completi
 
 ## Current critical-path discipline
 
+The major A/C / hydraulic-PS reassembly is complete. Current work is validation / closeout.
+
 Current execution logic is:
 
-1. finish A/C restoration using the rare reusable high-pressure line;
-2. restore hydraulic power steering while charge piping is out of the way;
-3. correct rack/column indexing;
-4. capture a 3D scan of the A/C / PS / charge-pipe packaging region while access is good;
-5. add practical protection/support for the rare A/C line;
-6. reinstall the existing intercooler piping and return the car to running configuration;
-7. verify A/C and hydraulic steering operation;
-8. perform a mechanical roadworthiness audit and create follow-up tasks only from actual findings.
+1. schedule and complete the Virginia state safety inspection before 2026-09-30;
+2. renew registration/tags before 2026-09-30;
+3. road-verify A/C and hydraulic power-steering operation, belt tracking, leaks, and steering-wheel position;
+4. capture the PowerFC shift/rev-hang log before changing decel/idle-control settings;
+5. recheck manual-transmission fluid;
+6. diagnose the known key-off parasitic draw with an ammeter/fuse-pull test;
+7. replace brake fluid when helper availability allows;
+8. finish the evidence-driven roadworthiness audit;
+9. complete the Recaro seat path when hardware is available.
 
-Do **not** keep the car apart waiting for a perfect charge-pipe redesign.
+Do **not** reopen the service corridor or hold Baseline open for a speculative charge-pipe redesign.
 
 ## A/C discipline
 
-Known state includes a new OEM compressor, aftermarket condenser, refreshed/new lines where available, and one rare high-pressure line that must be reused and protected.
+Known state includes a new OEM compressor, aftermarket condenser, refreshed/new lines where available, and one rare high-pressure line that must be protected carefully.
+
+The rare line is installed, P-clipped for support, and protected with 5/8-in heater hose around the vulnerable section.
 
 Treat the rare line as a packaging/serviceability constraint. When documenting work preserve routing, supports, abrasion/heat risks, clearances, and any changes that materially affect future service.
 
@@ -90,30 +107,31 @@ Do not assume a fabricated replacement is readily available merely because the r
 
 ## Hydraulic power-steering discipline
 
-Baseline owns restoration of the conventional hydraulic system.
+Baseline owns restoration and validation of the conventional hydraulic system.
 
-The rack is currently the known-good architecture for Baseline; EPS belongs to Side Projects and must earn its way onto the car later.
+The hydraulic system is installed. Remaining work is road validation of assist, leaks, belt tracking, pump behavior, and steering-wheel position.
 
-When restoring PS, document line routing, leaks, belt tracking, pump behavior, steering-wheel indexing, and any remaining mechanical issue.
+The rack is the known-good architecture for Baseline; EPS belongs to Side Projects and must earn its way onto the car later.
 
 Restoring hydraulic PS now does not conflict with future EPS R&D.
 
 ## Charge-pipe / packaging discipline
 
-The current charge piping conflicts with access and creates concern around the rare A/C line.
+The A/C / PS / charge-pipe corridor has been 3D-scanned and the current piping is reinstalled.
 
-For Baseline:
+The scan indicates limited practical recoverable space in the current architecture. Because the rare A/C line is now supported/protected and the car is back together, further charge-pipe optimization is low-priority refinement rather than Baseline work.
 
-- remove/move piping as required to complete A/C and PS work;
-- scan and document the area while open;
-- protect the rare A/C line;
-- reinstall the existing piping and return the car to service.
+Preserve the scan as useful packaging evidence, but do not treat low-cost scan geometry as metrology truth for critical hardpoints without confirmation.
 
-Follow-on improved piping may use ovalized geometry, AM transitions, composites, or other fabrication methods, but the design should favor simple manufacture, serviceability, line protection, and minimal unnecessary welding.
+## PowerFC / diagnostic discipline
 
-Preserve scan/CAD source, keep-out zones, engine movement allowance, line/hose clearance, supports, fastener/tool access, and assembly/removal path.
+The current PowerFC is a known-running reference and should be preserved as evidence before EMU removal.
 
-A low-cost 3D scan is useful packaging input, not metrology truth for critical hardpoints without confirmation.
+The 2026-09-11 A/C idle-hunt diagnosis and localized base-map correction are documented in `diagnostics/2026-09-11-powerfc-baseline.md`.
+
+Do not change decel, fuel-cut, or idle-control behavior for the reported shift/rev-hang symptom until a road log captures VTA/TPS, RPM, ISC command, injector pulse/fuel-cut behavior, AFR, and vehicle speed where available.
+
+Baseline owns the current drivability symptom diagnosis. Street Build owns the broader pre-EMU calibration/body-function archive.
 
 ## Seating discipline
 
@@ -151,7 +169,7 @@ Ownership/purchase does not equal successful installation.
 
 ## Cross-project boundaries
 
-- **Street Build** owns EMU, fuel-system validation, final drivetrain, turbo/intake/charge architecture, custom harness, DBW/flex, tires, and final instrumentation.
+- **Street Build** owns EMU, fuel-system validation, final drivetrain, turbo/intake/charge architecture, custom harness, DBW/flex, tires, final instrumentation, and the broader pre-EMU archive.
 - **Side Projects** owns BBK and EPS.
 - **CeliKey** owns passive entry/body-control/keyless-start R&D.
 
