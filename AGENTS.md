@@ -83,7 +83,7 @@ The major A/C / hydraulic-PS reassembly is complete. Current work is validation 
 
 Current execution logic is:
 
-1. renew registration/tags before 2026-09-30;
+1. confirm registration/tag renewal status; the recorded 2026-09-30 deadline has passed without a completion update;
 2. schedule the state safety inspection and then complete it at the booked appointment;
 3. road-verify A/C and hydraulic power-steering operation, belt tracking, leaks, and steering-wheel position;
 4. capture the PowerFC shift/rev-hang log before changing decel/idle-control settings;
@@ -91,9 +91,9 @@ Current execution logic is:
 6. diagnose the known key-off parasitic draw with an ammeter/fuse-pull test;
 7. replace brake fluid when helper availability allows;
 8. finish the evidence-driven roadworthiness audit;
-9. complete the Recaro seat path when hardware is available.
+9. install and verify the acquired Recaro SR2 seats and rails.
 
-Do not invent an inspection deadline that is not recorded by the user. The currently documented end-of-month deadline applies to registration/tags.
+Do not invent an inspection deadline that is not recorded by the user. The recorded 2026-09-30 deadline applies to registration/tags.
 
 Do **not** reopen the service corridor or hold Baseline open for a speculative charge-pipe redesign.
 
@@ -137,7 +137,7 @@ Baseline owns the current drivability symptom diagnosis. Street Build owns the b
 
 ## Seating discipline
 
-Recaro-compatible infrastructure is selected. Rails/brackets have been ordered from Japan and suitable SR3 seats are being sourced.
+Recaro-compatible infrastructure is selected. Recaro SR2 seats and the Japan-sourced Recaro rails are in hand, confirmed by the user on 2026-10-08. The earlier SR3 sourcing path is superseded; installation and fit verification remain open.
 
 Preserve exact rail/base-frame part numbers, side applicability, mounting hardware, seating height/position, slider/recline behavior, seatbelt-buckle/anchor integration, and actual installed clearance.
 
@@ -190,3 +190,4 @@ Before setting a task to `done`:
 ## End-of-session reconciliation
 
 After meaningful garage work, update what was installed, what actually worked, what was discovered, what remains blocked, and what became ready. Keep the record concise enough that the next session starts with the car rather than reconstructing history.
+
