@@ -85,10 +85,11 @@ The user has effectively committed to Recaro-compatible seat infrastructure.
 
 Current state:
 
-- Left/right Recaro-compatible Celica seat rails/brackets have been ordered from Japan.
-- Delivery timing is uncertain.
-- Suitable Recaro SR3 seats are being actively watched for.
-- Seat installation is blocked until both rails and suitable seats are available.
+- **USER-REPORTED — 2026-10-08:** Recaro SR2 seats and Recaro rails are in hand.
+- The earlier SR3 sourcing plan is superseded by the acquired SR2s.
+- Receipt and seat acquisition are complete; installation is now ready to attempt, subject to checking the actual rail/base-frame identification and mounting hardware.
+- Record side applicability, mounting compatibility, seating height/position, slider/recline operation, clearances, and seatbelt-buckle/anchor integration during installation.
+- No installed fitment, condition inspection, final purchase price, or rail part numbers were established by this receipt report.
 
 Future upholstery or alternate Recaro choices do not need to be resolved for Baseline.
 
@@ -116,13 +117,13 @@ The audit should continue to cover, as applicable:
 ## Administrative / road-legal
 
 - State safety inspection needs to be scheduled and then completed. No inspection expiration date is currently recorded in this repository.
-- Vehicle registration/tags expire at the end of September 2026 and should be renewed before 2026-09-30.
+- The recorded registration/tag deadline was 2026-09-30. As of the 2026-10-08 review, renewal completion is not recorded; confirm status and renew if still outstanding. This is a documentation gap, not evidence that renewal was missed.
 
 ## Execution logic
 
 ### Required now
 
-1. Renew registration/tags before month-end and schedule the state safety inspection.
+1. Confirm registration/tag renewal status against the recorded 2026-09-30 deadline and schedule the state safety inspection.
 2. Road-verify hydraulic power steering, steering-wheel position, and A/C operation after reassembly.
 3. Capture a PowerFC diagnostic baseline including the shift/rev-hang event.
 4. Recheck manual-transmission fluid.
@@ -131,11 +132,11 @@ The audit should continue to cover, as applicable:
 7. Complete the scheduled state safety inspection.
 8. Finish the baseline mechanical roadworthiness audit and create additional tasks only from real findings.
 
-### Parallel / waiting
+### Parallel seat installation
 
-- Receive seat rails from Japan.
-- Source suitable Recaro SR3 seats.
-- Install seats when both prerequisites exist.
+- Recaro rails and SR2 seats are received; acquisition prerequisites are complete.
+- Install the acquired seats and verify hardware, driving position, clearances, slider/recline function, and restraint integration.
+- Installation remains open until those checks are recorded.
 
 ### Deferred refinement / Street Build priority
 
@@ -148,3 +149,4 @@ The audit should continue to cover, as applicable:
 Tires and major drivetrain/control modernization belong in the Street Build execution path, not Baseline.
 
 The Baseline repo should remain focused on the current car and current powertrain becoming dependable and enjoyable before the replacement drivetrain module is ready.
+

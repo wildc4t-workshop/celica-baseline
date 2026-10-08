@@ -4,7 +4,7 @@ repository: wildc4t-workshop/celica-baseline
 repository_type: engineering-project
 status: active
 phase: validation
-checkpoint: 2026-09-11
+checkpoint: 2026-10-08
 
 task_prefix: BASE-
 decision_prefix: DEC-BASE-
@@ -15,16 +15,16 @@ objective: >-
   hydraulic power steering, and installing the Recaro seat upgrade.
 
 current_direction:
-  - Treat the major A/C/PS reassembly as complete: rare A/C line installed, P-clipped and protected with 5/8-in heater hose at the vulnerable section; hydraulic power steering restored; standard belt installed; steering wheel recentered; and existing charge piping back on the car.
+  - Treat the major A/C/PS reassembly as complete — rare A/C line installed, P-clipped and protected with 5/8-in heater hose at the vulnerable section; hydraulic power steering restored; standard belt installed; steering wheel recentered; and existing charge piping back on the car.
   - Treat the A/C / PS / charge-pipe 3D scan as complete. The captured corridor suggests limited practical space can be recovered in the current architecture, so further Baseline packaging optimization is low priority.
   - Direct near-term project energy toward the Street Build rather than further optimizing the current service corridor.
   - Validate A/C cooling/leak-free operation and hydraulic steering behavior in normal road use rather than reopening the service area.
-  - Preserve the 2026-09-11 PowerFC diagnostic baseline: 800 rpm normal idle, 900 rpm A/C idle, and the localized 3000-load / 800-1200-rpm Base Map correction that resolved the A/C idle hunt.
+  - Preserve the 2026-09-11 PowerFC diagnostic baseline — 800 rpm normal idle, 900 rpm A/C idle, and the localized 3000-load / 800-1200-rpm Base Map correction that resolved the A/C idle hunt.
   - Capture a road log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
-  - Renew registration/tags before 2026-09-30. Schedule and complete the state safety inspection separately; no inspection expiration date is currently recorded.
+  - Confirm registration/tag renewal status; the recorded 2026-09-30 deadline has passed with completion unrecorded. Schedule and complete the state safety inspection separately; no inspection expiration date is currently recorded.
   - Recheck manual-transmission fluid, diagnose the known key-off parasitic draw with an ammeter/fuse-pull test, and replace brake fluid when helper availability allows.
   - Finish the evidence-driven mechanical audit from actual findings.
-  - Complete the Recaro seat path when the Japan-sourced rails and suitable SR3 seats are available.
+  - Install and verify the acquired Recaro SR2 seats and Recaro rails; both are in hand as of 2026-10-08, superseding the SR3 sourcing plan.
 
 success_criteria:
   baseline_complete: >-
@@ -37,3 +37,4 @@ dashboard:
   purchase_file: purchases.csv
   durable_state: PROJECT.md
   agent_instructions: AGENTS.md
+

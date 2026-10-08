@@ -35,7 +35,7 @@ The PowerFC idle correction and supporting logs are documented in [`diagnostics/
 
 ## Current Critical Path
 
-1. Renew vehicle registration/tags before 2026-09-30.
+1. Confirm registration/tag renewal status; the recorded 2026-09-30 deadline has passed and completion is not recorded.
 2. Schedule the state safety inspection, then complete it at the booked appointment.
 3. Road-verify A/C cooling/leak-free operation, hydraulic steering assist, belt tracking, leaks, and steering-wheel position.
 4. Capture a PowerFC driving log of the reported shift/rev-hang behavior before changing decel or idle-control settings.
@@ -44,13 +44,13 @@ The PowerFC idle correction and supporting logs are documented in [`diagnostics/
 7. Replace brake fluid when a second set of hands is available.
 8. Finish the evidence-driven mechanical roadworthiness audit.
 
-No state-inspection expiration date is currently recorded in the repository; the explicit end-of-month deadline applies to the registration/tags.
+No state-inspection expiration date is currently recorded in the repository; the recorded 2026-09-30 deadline applies to the registration/tags.
 
 ## Parallel Seat Path
 
-- Recaro-compatible seat rails have been ordered from Japan and are in transit.
-- Suitable Recaro SR3 seats are being sourced.
-- Final installation waits on both rails and seats.
+- Recaro SR2 seats and Recaro rails are **in hand**, user-confirmed 2026-10-08.
+- Receipt/sourcing tasks are complete; the earlier SR3 search is superseded.
+- Installation and driving-position/restraint verification are ready to proceed; no installed-fit claim is made.
 
 ## Follow-on Refinement
 
@@ -68,3 +68,4 @@ Related repositories:
 - [`celica-street-build`](https://github.com/wildc4t-workshop/celica-street-build) — final major drivetrain/controls build.
 - [`Celica-engineering-knowledge`](https://github.com/wildc4t-workshop/Celica-engineering-knowledge) — research/reference archive.
 - [`celica-project-dashboard`](https://github.com/wildc4t-workshop/celica-project-dashboard) — public task dashboard.
+
